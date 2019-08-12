@@ -5,3 +5,15 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+50.times do |i| 
+  a = Employee.new(
+    name: "従業員#{i}", 
+    department: "開発",
+    gender: "男",
+    birth: "2019/08/07",
+    joined_date: Time.now,
+    payment: 1000000,
+    note: "備考"
+  )
+  a.save
+end
